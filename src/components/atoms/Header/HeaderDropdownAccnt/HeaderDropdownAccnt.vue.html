@@ -1,0 +1,9 @@
+<b-nav-item-dropdown right no-caret>
+  <template slot="button-content">
+    <div class="display-flex align-items-center">
+      <avatar :username="username" :size="30" color="primary"></avatar>
+    </div>
+  </template>
+  <b-dropdown-item><i class="fa fa-user"></i> {{ username }}</b-dropdown-item>
+  <b-dropdown-item @click="onLogout"><i class="fa fa-sign-out"></i> Logout</b-dropdown-item>
+</b-nav-item-dropdown>

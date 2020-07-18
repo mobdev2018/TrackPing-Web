@@ -1,0 +1,11 @@
+<div class="app dashboard-layout">
+  <Navbar/>
+  <div class="app-body">
+    <Sidebar :navItems="navItems" class="mt-5"/>
+    <div class="main">
+      <div class="container-fulid pt-5">
+        <router-view></router-view>
+      </div>
+    </div>
+  </div>
+</div>
